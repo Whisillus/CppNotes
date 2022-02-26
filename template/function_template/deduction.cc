@@ -8,11 +8,11 @@ T max(T v1, T v2) {
 
 // Default arguments for deduction
 template <typename T>
-void defaultFuntionValue(T = "");
+int defaultFunctionValue(T = "");
 // It is okay:
-// defaultFunctionValue(1);
+// int i = defaultFunctionValue(1);
 // we cannot use like this for type deduction reason:
-// defaultFuncitonValue();
+// int i = defaultFunctionValue();
 // but we can do following
 template <typename T = std::string>
 void defaultTemplateValue(T = "");

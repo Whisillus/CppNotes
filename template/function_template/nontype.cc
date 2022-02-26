@@ -5,7 +5,7 @@
 // const int or enumerations
 // pointers to obj/func/members
 // lvalue references to obj or func
-// std::nullpty_t
+// std::nullptr_t
 template <typename T, int V = 0>
 T addV(T x) {
     // this can be useful if functions or operations
