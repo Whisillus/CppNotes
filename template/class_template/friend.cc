@@ -1,5 +1,6 @@
 // This file shows
 // 1. friend in template class
+// 2. declare all other Stack instaces are friend
 #include <iostream>
 #include <iterator>
 #include <ostream>
@@ -7,6 +8,9 @@
 
 template <typename T>
 class Stack {
+    // we can access to all the member of other Stack instances
+    // bcs T is not used here, so we can omit it
+    template<typename> friend class Stack;
 private:
     std::vector<T> elems;
 
